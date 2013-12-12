@@ -1,0 +1,51 @@
+﻿@model MvcEmployeesManager.Models.EmployeeModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <fieldset>
+        <legend>EmployeeModel</legend>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.FirsName)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.FirsName)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.LastName)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.LastName)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.Salary)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Salary)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.ManagerId)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.ManagerId)
+        </div>
+    </fieldset>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
